@@ -40,7 +40,7 @@ class GHST
 		class espawn {description = "random enemy infantry patrol spawn at location";};
 		class evehsentryspawn {description = "random enemy vehicle spawn near roads if available";};
 		class civcars {description = "random civilian cars - vbieds";};
-		class ieds {description = "random ieds";};
+	//	class ieds {description = "random ieds";};
 		class fillbuild {description = "fill random buildings at location with units";};
 		class basedef {description = "static base defence vehicles";};
 		class eboatspawn {description = "random enemy boat spawn";};
