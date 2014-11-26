@@ -36,18 +36,18 @@ while {true} do
 		if (((typeOf _x) in (ghst_Supported_Vehicles_Boat)) and !(_x in ghst_boat_Array)) then
 		{
 			ghst_boat_Array = ghst_boat_Array + [_x];
-			_x addAction ["<t size='1.2' shadow='2' color=""#FF9900"">Push Boat</t>", "call ghst_fnc_BoatPush", [], 1, false, true, "", "_this distance _target < 8 and !(_this in _target)"];  
+			_x addAction ["<t size='1' shadow='1' color=""#FF9900"">Push Boat</t>", "call ghst_fnc_BoatPush", [], 1, false, true, "", "_this distance _target < 8 and !(_this in _target)"];  
 		};
 		if (((typeOf _x) in (ghst_Supported_AmmoBoxes)) and !(_x in ghst_AmmoBoxes_Array)) then
 		{
 			ghst_AmmoBoxes_Array = ghst_AmmoBoxes_Array + [_x];
-			_x addaction ["<t size='1.4' shadow='2' color='#FF8C00'>Virtual Arsenal</t>", { ["Open",true] call BIS_fnc_arsenal; }, [], 1, false, true, "","alive _target"];
+			_x addaction ["<t size='1' shadow='1' color='#FF8C00'>Virtual Arsenal</t>", { ["Open",true] call BIS_fnc_arsenal; }, [], 1, false, true, "","alive _target"];
 		};
 		
 		if (((typeOf _x) in (ghst_support_vehicles_bobcat)) and !(_x in ghst_bobcat_array)) then
 		{
 			ghst_bobcat_array = ghst_bobcat_array + [_x];
-			_x addaction ["<t size='1.4' shadow='2' color='#FF0000'>Clear Obstruction</t>", { [] call ghst_fnc_obstruction_clear; }, [], 1, false, false, "","alive _target and _this == driver _target"];
+			_x addaction ["<t size='1' shadow='1' color='#FF0000'>Clear Obstruction</t>", { [] call ghst_fnc_obstruction_clear; }, [], 1, false, false, "","alive _target and _this == driver _target"];
 		};
 		
 	} forEach (vehicles);

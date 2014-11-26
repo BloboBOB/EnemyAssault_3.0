@@ -44,14 +44,14 @@ class PARAM_Tasks
 	title = "    Number of Tasks:";
 	values[] = {8,7,6,5,4,3,2,1};
 	texts[] = {"8","7","6","5","4","3","2","1"};
-	default = 4;
+	default = 6;
 };
 class PARAM_Enemy
 {
 	title = "    Type of Enemy:";
 	values[] = {2,1,0};
 	texts[] = {"Random","Greek Army","Iranian Army"};
-	default = 2;
+	default = 1;
 };
 class PARAM_Kavala
 {
@@ -191,13 +191,13 @@ class PARAM_AllowChatWhileUnconscious
 	title = "    Allow Chat While Unconscious:";
 	values[] = {0,1};
 	texts[] = {"NO","YES"};
-	default = 0;
+	default = 1;
 };
 /*class PARAM_HeadlessClient
 {
 	title = "Headless Client:";
 	values[] = {1,0};
 	texts[] = {"ON","OFF"};
-	default = 0;
+	default = 1;
 };
 */

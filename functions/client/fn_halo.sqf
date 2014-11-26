@@ -166,7 +166,7 @@ sleep 1;
 
 openMap false;
 
-_bis_fnc_halo_action = _caller addaction ["<t size='1.5' shadow='2' color='#ff0000'>Open Chute</t> <img size='3' color='#ff0000' shadow='2' image='\A3\Air_F_Beta\Parachute_01\Data\UI\Portrait_Parachute_01_CA.paa'/>","A3\functions_f\misc\fn_HALO.sqf",[],1,false,true,"Eject"];
+_bis_fnc_halo_action = _caller addaction ["<t size='1' shadow='1' color='#ff0000'>Open Chute</t> <img color='#ff0000' shadow='2' image='\A3\Air_F_Beta\Parachute_01\Data\UI\Portrait_Parachute_01_CA.paa'/>","A3\functions_f\misc\fn_HALO.sqf",[],1,false,true,"Eject"];
 
 sleep 5;
 

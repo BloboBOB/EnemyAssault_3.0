@@ -37,21 +37,21 @@ player setVariable ["ghst_cargodrop", false];
 player setVariable ["dix_halojump", false];
 
 //addactions for halo and vehspawn. Should ensure them showing even with jip
-vehspawn addAction ["<t size='1.5' shadow='2' color='#FFA000'>Spawn Vehicle</t> <img size='3' color='#FFA000' shadow='2' image='\A3\armor_f_gamma\MBT_01\Data\UI\Slammer_M2A1_Base_ca.paa'/>", "call ghst_fnc_spawnveh", ["veh_spawn",45], 6, true, true, "","alive _target"];
+vehspawn addAction ["<t size='1' shadow='2' color='#FFA000'>Spawn Vehicle</t> <img color='#FFA000' shadow='2' image='\A3\armor_f_gamma\MBT_01\Data\UI\Slammer_M2A1_Base_ca.paa'/>", "call ghst_fnc_spawnveh", ["veh_spawn",45], 6, true, true, "","alive _target"];
 vehspawn setObjectTexture [0, "\A3\armor_f_gamma\MBT_01\Data\UI\Slammer_M2A1_Base_ca.paa"];
 
-airspawn addAction ["<t size='1.5' shadow='2' color='#FFA000'>Spawn Aircraft</t> <img size='3' color='#FFA000' shadow='2' image='\A3\Air_F_EPC\Plane_CAS_01\Data\UI\Plane_CAS_01_CA.paa'/>", "call ghst_fnc_spawnair", ["air_spawn",135], 6, true, true, "","alive _target"];
+airspawn addAction ["<t size='1' shadow='2' color='#FFA000'>Spawn Aircraft</t> <img color='#FFA000' shadow='2' image='\A3\Air_F_EPC\Plane_CAS_01\Data\UI\Plane_CAS_01_CA.paa'/>", "call ghst_fnc_spawnair", ["air_spawn",135], 6, true, true, "","alive _target"];
 airspawn setObjectTexture [0, "\A3\Air_F_EPC\Plane_CAS_01\Data\UI\Plane_CAS_01_CA.paa"];
 
-boatspawn addAction ["<t size='1.5' shadow='2' color='#FFA000'>Spawn Boat</t> <img size='3' color='#FFA000' shadow='2' image='\A3\boat_f_beta\SDV_01\data\ui\portrait_SDV_ca.paa'/>", "call ghst_fnc_spawnboat", ["boat_spawn",166], 6, true, true, "","alive _target"];
+boatspawn addAction ["<t size='1' shadow='2' color='#FFA000'>Spawn Boat</t> <img color='#FFA000' shadow='2' image='\A3\boat_f_beta\SDV_01\data\ui\portrait_SDV_ca.paa'/>", "call ghst_fnc_spawnboat", ["boat_spawn",166], 6, true, true, "","alive _target"];
 boatspawn setObjectTexture [0, "\A3\boat_f_beta\SDV_01\data\ui\portrait_SDV_ca.paa"];
 
-halo addAction ["<t size='1.5' shadow='2' color='#00ffff'>HALO</t> <img size='3' color='#00ffff' shadow='2' image='\A3\Air_F_Beta\Parachute_01\Data\UI\Portrait_Parachute_01_CA.paa'/>", "call ghst_fnc_halo", [false,1000,60,false], 5, true, true, "","alive _target"];
+halo addAction ["<t size='1' shadow='2' color='#00ffff'>HALO</t> <img color='#00ffff' shadow='2' image='\A3\Air_F_Beta\Parachute_01\Data\UI\Portrait_Parachute_01_CA.paa'/>", "call ghst_fnc_halo", [false,1000,60,false], 5, true, true, "","alive _target"];
 
-port_teleport addAction ["<t size='1.5' shadow='2' color='#8904B1'>Move to Port</t> <img size='3' color='#8904B1' shadow='2' image='\A3\boat_f_beta\SDV_01\data\ui\portrait_SDV_ca.paa'/>", {player setposasl [getmarkerpos "spawn_board_3" select 0,getmarkerpos "spawn_board_3" select 1,1.5];}, [], 5, true, true, "","alive _target"];
+port_teleport addAction ["<t size='1' shadow='2' color='#8904B1'>Move to Port</t> <img color='#8904B1' shadow='2' image='\A3\boat_f_beta\SDV_01\data\ui\portrait_SDV_ca.paa'/>", {player setposasl [getmarkerpos "spawn_board_3" select 0,getmarkerpos "spawn_board_3" select 1,1.5];}, [], 5, true, true, "","alive _target"];
 port_teleport setObjectTexture [0, "\A3\boat_f_beta\SDV_01\data\ui\portrait_SDV_ca.paa"];
 
-boatspawn addAction ["<t size='1.5' shadow='2' color='#8904B1'>Move to Base</t> <img size='3' color='#8904B1' shadow='2' image='\A3\air_f_beta\Heli_Transport_01\Data\UI\Heli_Transport_01_base_CA.paa'/>", {player setposatl [getmarkerpos "Respawn_West" select 0,getmarkerpos "Respawn_West" select 1,0.2];}, [], 5, false, true, "","alive _target"];
+boatspawn addAction ["<t size='1' shadow='2' color='#8904B1'>Move to Base</t> <img color='#8904B1' shadow='2' image='\A3\air_f_beta\Heli_Transport_01\Data\UI\Heli_Transport_01_base_CA.paa'/>", {player setposatl [getmarkerpos "Respawn_West" select 0,getmarkerpos "Respawn_West" select 1,0.2];}, [], 5, false, true, "","alive _target"];
 
 ghst_local_vehicles = [];
 ghst_players = [];//["p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11","p12"];
@@ -75,8 +75,3 @@ sleep 1;
 simulWeatherSync;
 
 [] spawn ghst_fnc_vehicle_actioninit;
-
-sleep 30;
-
-// Info text
-[str("Enemy Assault") , str(date select 1) + "." + str(date select 2) + "." + str(date select 0), str("By Ghost")] spawn BIS_fnc_infoText;

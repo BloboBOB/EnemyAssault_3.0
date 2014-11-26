@@ -1,9 +1,8 @@
 author = "Ghost"; // Author
 onLoadName = "Enemy Assault"; // Mission name (temporary solution; actual name set in editor will be used later in the alpha)
-onLoadMission = "Awaiting Orders"; // Description
+onLoadMission = "Edited by bux u. BOB - 1.4.0 @AGM @ASR_AI; // Description
 loadScreen = "pics\ghostadmin_icon.paa"; // Preview picture
 overviewText = "Enemy forces occupy most of Altis. Await orders from command and complete all tasks given. Good Luck.";
-//overviewPicture = "pics\overview.paa";
 class Header
 {
   gameType = Coop;
