@@ -18,9 +18,6 @@ class Params
 {
 
 		#include "ghst_params.hpp"
-		//// Respawn Script - Start ////
-		#include "INS_revive\params.hpp"
-		//// Respawn Script - End   ////
 
 };
 
@@ -41,7 +38,7 @@ class cfgFunctions {
 	#include "functions\cfgfunctions.hpp"
 	#include "taw_vd\CfgFunctions.hpp"
     
-      //SOB specials
+    //SOB specials
     #include "EPD\EPDcfgFunctions.hpp"
 };
 
