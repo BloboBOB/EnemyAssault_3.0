@@ -32,12 +32,6 @@ RespawnDelay = 5;
 RespawnDialog = 0;
 disabledAI = 1;
 
-class RscTitles
-{
-	//// Respawn Script - Start ////
-	#include "INS_revive\rsctitles.hpp"
-	//// Respawn Script - End   ////
-};
 
 #include "functions\dlg\Spawnveh.hpp"
 #include "taw_vd\dialog.hpp"
@@ -47,6 +41,9 @@ class cfgFunctions {
 	//ghst functions
 	#include "functions\cfgfunctions.hpp"
 	#include "taw_vd\CfgFunctions.hpp"
+    
+      //SOB specials
+    #include "EPD\EPDcfgFunctions.hpp"
 };
 
 // Comm Menu

@@ -15,9 +15,23 @@ if (!isDedicated) then {waitUntil {!isNull player && isPlayer player};};
 
 tf_no_auto_long_range_radio = true;
 
-_igiload = execVM "IgiLoad\IgiLoadInit.sqf";
 
 execVM "shk_taskmaster.sqf";
 
-// INS_revive initialize
-[] execVM "INS_revive\revive_init.sqf";
+
+//------------------------------------------------------------
+/** SOB Specials
+*Ohne LEA
+*/
+enable_lea_addon = false;
+
+/**
+* Disable ingame AI radio and local callouts
+*/
+0 fadeRadio 0;
+enableRadio false;
+enableSentences false;
+player disableConversation false;
+
+
+[] spawn {call compile preprocessFileLineNumbers "EPD\Ied_Init.sqf";};
