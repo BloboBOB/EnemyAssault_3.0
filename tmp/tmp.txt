@@ -1,0 +1,40 @@
+/*
+if (_vehicle isKindOf "I_Heli_Transport_02_F") then 
+{
+	_vehicle setObjectTextureGlobal [0,"#(argb,8,8,3)color(0.7,0.75,0.75,0.02)"];
+	_vehicle setObjectTextureGlobal [1,"#(argb,8,8,3)color(0.7,0.75,0.75,0.02)"];
+	_vehicle setObjectTextureGlobal [2,"#(argb,8,8,3)color(0.7,0.75,0.75,0.02)"];
+
+	_vehicle setObjectTextureGlobal [0,"#(argb,8,8,3)color(0.7,0.75,0.65,0.05)"];
+	_vehicle setObjectTextureGlobal [1,"#(argb,8,8,3)color(0.7,0.75,0.65,0.05)"];
+	_vehicle setObjectTextureGlobal [2,"#(argb,8,8,3)color(0.7,0.75,0.65,0.05)"];
+
+};
+
+if (_vehicle isKindOf "Plane_Fighter_03_base_F") then 
+{
+	_vehicle setObjectTextureGlobal [0,"#(argb,8,8,3)color(0.7,0.75,0.75,0.02)"];
+	_vehicle setObjectTextureGlobal [1,"#(argb,8,8,3)color(0.7,0.75,0.75,0.02)"];
+};
+*/
+/*
+if ((_vehicle iskindof "I_Heli_Transport_02_F") or (_vehicle iskindof "B_Heli_Transport_01_F") or (_vehicle iskindof "B_Truck_01_covered_F")) then {
+
+_vas = _vehicle addAction["<t color='#ffa200'>Virtual Ammobox</t>", compile preprocessFileLineNumbers "INS_revive\VAS\open.sqf", [], 1, false, true, "","alive _target"];
+
+_vas_addaction = _vehname + "vasaddaction";
+
+_vehicle setVariable [_vas_addaction, _vas, true];
+
+};
+
+if ((_vehicle iskindof "I_Heli_Transport_02_F") or (_vehicle iskindof "B_Heli_Transport_01_F")) then {
+
+_sling = _vehicle addAction ["<t color=""#ffff00"">Slingload Vehicle</t>", "scripts\sling\ghst_slingload.sqf", [], 1, false, true, "","alive _target and _this == driver _target"];
+
+_sling_addaction = _vehname + "slingaddaction";
+
+_vehicle setVariable [_sling_addaction, _sling, true];
+
+};
+*/
