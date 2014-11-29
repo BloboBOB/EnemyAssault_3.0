@@ -92,7 +92,7 @@ if (round (random 10) > 5) then {
 
 [_locselpos,800,15,_ghst_side,[false,"ColorBlack"]] call ghst_fnc_mines;
 
-[_locselpos,800,5,WEST,[false,"ColorRed"]] call ghst_fnc_ieds;
+//[_locselpos,800,5,WEST,[false,"ColorRed"]] call ghst_fnc_ieds;
 
 //random objective script
 _PARAM_Tasks = "PARAM_Tasks" call BIS_fnc_getParamValue;

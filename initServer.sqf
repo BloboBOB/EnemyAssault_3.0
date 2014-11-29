@@ -37,7 +37,6 @@ _namearray = ["c130c_1","c130t_2"];
 	} foreach ["C130J_Cargo","C130J"];
 };
 
-#include "servermodules.sqf"
 waituntil {! isnil "SHK_Taskmaster_Tasks"};
 
 call ghst_fnc_randomobj;	
