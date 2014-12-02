@@ -27,4 +27,4 @@ removeGoggles _unit;
 //_unit setVariable ["AGM_IsMedic", false];
 //_unit setVariable ["AGM_isEOD", false];
 
-sleep 1;
+sleep 0.5;

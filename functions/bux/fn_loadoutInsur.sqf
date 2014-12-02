@@ -28,6 +28,4 @@ _unit forceAddUniform (_randomAppearance select 1);
 _unit addVest (_randomAppearance select 2);
 _unit setFace (_randomAppearance select 4);
 
-_unit addBackpack "B_FieldPack_khk";
-
 [_unit, _allGear] call bux_fnc_restoreGear;
