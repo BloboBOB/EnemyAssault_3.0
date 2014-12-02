@@ -55,7 +55,7 @@ case 1: {
 	
 	ghst_side = independent;
 
-	ghst_menlist = ["I_soldier_F","I_Soldier_lite_F","I_soldier_AT_F","I_soldier_GL_F","I_soldier_LAT_F","I_soldier_exp_F","I_soldier_F","I_soldier_AR_F","I_soldier_repair_F","I_soldier_LAT_F","I_soldier_AR_F","I_soldier_M_F","I_soldier_AT_F","I_soldier_AA_F","I_soldier_F","I_soldier_TL_F","I_medic_F","I_soldier_GL_F","I_soldier_F"];
+	ghst_menlist = ["I_soldier_F","I_Soldier_lite_F","I_soldier_AT_F","I_soldier_GL_F","I_soldier_LAT_F","I_soldier_exp_F","I_soldier_F","I_soldier_AR_F","I_soldier_repair_F","I_soldier_LAT_F","I_soldier_AR_F","I_soldier_M_F","I_soldier_AT_F","I_Sniper_F","I_soldier_F","I_soldier_TL_F","I_medic_F","I_soldier_GL_F","I_soldier_F"];
 
 	ghst_diverlist = ["I_diver_f","I_diver_exp_f","I_diver_TL_f","I_diver_f","I_diver_exp_f","I_diver_f"];
 	
@@ -67,7 +67,7 @@ case 1: {
 
 	ghst_convoyvehlist = ["I_Truck_02_transport_F","I_MRAP_03_gmg_F","I_Truck_02_covered_F","I_APC_Wheeled_03_cannon_F","I_Ifrit_F","I_Truck_02_covered_F","I_MRAP_03_hmg_F","I_MRAP_03_F","I_Truck_02_transport_F"];
 
-	ghst_staticlist = ["I_HMG_01_high_F","I_GMG_01_high_F","I_static_AT_F","I_static_AA_F"];
+	ghst_staticlist = ["I_HMG_01_high_F","I_GMG_01_high_F","I_static_AT_F"];
 	
 	ghst_patrolboatlist = ["I_Boat_Armed_01_minigun_F"];
 	

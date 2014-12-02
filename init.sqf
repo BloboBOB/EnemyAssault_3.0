@@ -35,3 +35,8 @@ player disableConversation false;
 
 
 [] spawn {call compile preprocessFileLineNumbers "EPD\Ied_Init.sqf";};
+
+
+//-- Ziv
+[7, 500, 10] execVM "scripts\MAD_civilians.sqf";
+[6, 500, 1000] execVM "scripts\MAD_traffic.sqf";

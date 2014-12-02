@@ -539,6 +539,9 @@ fnc_ghst_create_unit = {
 	_aiSkill = [_this, 3, 0.5, [0]] call BIS_fnc_param;
 	
 	_man = _egrp createUnit [_mansel,_spawnpos, [], 0, "NONE"];
+    
+    [_man] call bux_fnc_loadoutInsur;
+    
 	_man setskill ["general",0.4];//(0.4 + ((round(random 4)) / 10))
 	_man setSkill ["aimingAccuracy",_aiSkill];
 	_man setSkill ["aimingSpeed",_aiSkill];

@@ -23,7 +23,7 @@ class Params
 
 // description.ext settings for revive
 ///////////////////////////////////////////////////////////////////////////////////////////
-Respawn = "INSTANT";
+Respawn = "BASE";
 RespawnDelay = 5;
 RespawnDialog = 0;
 disabledAI = 1;
@@ -40,8 +40,30 @@ class cfgFunctions {
     
       //SOB specials
     #include "EPD\EPDcfgFunctions.hpp"
+    
+    class bux {
+        class bux {
+        file = "functions\bux";
+        class addDefaultItems;
+        class getAllGear;
+        class getRandomAppearance;
+        class loadoutInsur;
+        class resetUnit;
+        class restoreGear;
+        };
+    };
+    
 };
-
+class CfgUnitInsignia
+{
+	class EOD
+	{
+		displayName = "Explosive Ordnance Disposal"; // Name displayed in Arsenal
+		author = "BOB"; // Author displayed in Arsenal
+		texture = "img\EOD.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+};
 // Comm Menu
 ///////////////////////////////////////////////////////////////////////////////////////////
 #include "comm_menu.h"
